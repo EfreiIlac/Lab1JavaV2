@@ -12,12 +12,16 @@ public class Main extends JFrame implements ActionListener  {
     JPanel inputPanel = new JPanel();
     JPanel outputPanel = new JPanel();
     JPanel buttonPanel = new JPanel();
+    // Grid Layout
+    
+
+
 
     JLabel nameLabel = new JLabel("Name");
     JTextField name = new JTextField("");
     JLabel firstnameLabel = new JLabel("Firstname");
     JTextField firstname = new JTextField("");
-    JLabel addressLabel = new JLabel("address");
+    JLabel addressLabel = new JLabel("Address");
     JTextField address = new JTextField("");
     JLabel cityLabel = new JLabel("City");
     JTextField city = new JTextField("");
@@ -32,7 +36,7 @@ public class Main extends JFrame implements ActionListener  {
     public Main() {
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        setSize(500, 500);
+        setSize(1500, 500);
         add(panel);
         panel.add(inputPanel);
         panel.add(buttonPanel);
@@ -41,8 +45,9 @@ public class Main extends JFrame implements ActionListener  {
         firstname.setPreferredSize(new DimensionUIResource(100, 20));
         address.setPreferredSize(new DimensionUIResource(100, 20));
         city.setPreferredSize(new DimensionUIResource(100, 20));
+        province.setPreferredSize(new DimensionUIResource(100, 20));
         mail.setPreferredSize(new DimensionUIResource(100, 20));
-
+        
         inputPanel.add(nameLabel);
         inputPanel.add(name);
         inputPanel.add(firstnameLabel);
@@ -51,6 +56,7 @@ public class Main extends JFrame implements ActionListener  {
         inputPanel.add(address);
         inputPanel.add(cityLabel);
         inputPanel.add(city);
+        inputPanel.add(provinceLabel);
         inputPanel.add(province);
         inputPanel.add(mailLabel);
         inputPanel.add(mail);

@@ -12,7 +12,7 @@ import javax.swing.plaf.DimensionUIResource;
 
 public class Excel extends JFrame implements ActionListener {
   JPanel panel = new JPanel();
-  JLabel numbersLabel = new JLabel("Entrez des nombres separes par des espaces");
+  JLabel numbersLabel = new JLabel("Enter numbers separate by spaces");
   JTextField numbers = new JTextField("");
   JLabel output = new JLabel();
   JButton calculate = new JButton("Calculate");
@@ -26,7 +26,7 @@ public class Excel extends JFrame implements ActionListener {
   public Excel() {
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setVisible(true);
-    setSize(500, 500);
+    setSize(1500, 500);
     add(panel);
     numbers.setPreferredSize(new DimensionUIResource(100, 20));
     
